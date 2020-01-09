@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  padding-top: 35vh;
+  font-family: 'Inconsolata', monospace;
+  letter-spacing: 3px;
+}
+
+.big-text {
+  font-size: 5em;
+}
+
+.small-text {
+  font-size: 2em;
+}
+
+.right-align {
+  text-align: right;
+}
+
+#main-stuff {
+  margin-left: 2.5vw;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  font-size: 1.2em;
+  padding-left: 2.5vw;
+}
+
+#nav > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding-top: 15px;
+}
+
+#button-set {
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+#button-set > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+#homeButton {
+  text-decoration: underline;
+}
+
+#button-set > a:hover {
+  text-decoration: underline;
+}
+
+#login-button:hover {
+  text-decoration: underline;
+}
+
+#blinking {
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+@keyframes blink {
+  0% {color: transparent;}
+  50% {color: white;}
+  100% {color: transparent; }
+}
